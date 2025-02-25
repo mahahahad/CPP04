@@ -1,7 +1,7 @@
 CXX := c++
 CXXFLAGS := -Wall -Werror -Wextra -std=c++98
 
-SRCS := Cat.cpp Dog.cpp Animal.cpp main.cpp
+SRCS := Cat.cpp Dog.cpp Animal.cpp WrongAnimal.cpp WrongCat.cpp main.cpp
 OBJS_DIR := objects
 OBJS := $(addprefix $(OBJS_DIR)/, $(SRCS:.cpp=.o))
 DEPS := $(addprefix $(OBJS_DIR)/, $(SRCS:.cpp=.d))

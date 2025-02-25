@@ -13,13 +13,13 @@
 class   Animal {
     public:
         Animal();
-        Animal( std::string type );
+        Animal( const std::string& animalType );
         Animal( const Animal& copy );
         Animal& operator=( const Animal& copy );
-        ~Animal();
+        virtual ~Animal();
         virtual void    makeSound( void ) const;
         std::string     getType( void ) const;
-        void            setType( const std::string& type );
+        void            setType( const std::string& newType );
     protected:
         std::string type;
 };
