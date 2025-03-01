@@ -17,9 +17,11 @@ class   Animal {
         Animal( const Animal& copy );
         Animal& operator=( const Animal& copy );
         virtual ~Animal();
+
         virtual void    makeSound( void ) const;
         std::string     getType( void ) const;
         void            setType( const std::string& newType );
+
     protected:
         std::string type;
 };
