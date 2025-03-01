@@ -40,8 +40,5 @@ int main() {
             delete animals[i];
         }
     }
-    {
-        
-    }
     return (0);
 }
